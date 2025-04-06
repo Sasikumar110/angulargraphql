@@ -1,0 +1,13 @@
+<input class="form-control w-25" placeholder="Type name"  [(ngModel)]="inputValues">
+<br>
+<button class="btn btn-primary" (click)="onSubmit()">Submit</button>
+<br>
+
+@for(access of options; track access.name){
+    {{access.name}} 
+}
+
+<app-reflectedcomponent></app-reflectedcomponent>
+
+
+
